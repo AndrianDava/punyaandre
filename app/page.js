@@ -177,7 +177,7 @@ export default class Page extends Component {
         return (
             <>
                 <Particles id='tsparticles' init={this.particlesInit} loaded={this.particlesLoaded}
-                    url='/particles.json' />
+                    url='' />
                 {this.state.isParticleLoading ?
                     <Loader /> :
                     <Container style={{
