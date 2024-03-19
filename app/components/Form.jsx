@@ -7,7 +7,7 @@ export default class Form extends Component {
         return (
             <Grid.Row>
                 <Grid.Column width={12}>
-                    <Image src='/icons8-youtube-100.png' size='huge' alt='youtube-logo' centered />
+                    <Image src='/logo.png' size='huge' alt='youtube-logo' centered />
                     <SemanticForm>
                         <SemanticForm.Input fluid placeholder='Video URL or ID'
                             autoFocus
