@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 
 const env = process.env.NODE_ENV
 const isDev = env === 'development'
-const allowedHostInProduction = 'andzz.dev'
+const allowedHostInProduction = ''
 
 export function middleware(request) {
     if (!isDev && request.headers.get('host') !== allowedHostInProduction) {
