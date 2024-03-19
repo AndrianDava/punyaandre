@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
             <head>
                 <link rel='icon' href='/favicon.ico' />
             </head>
-            <body className={inter.className} style={{ backgroundColor: '#323232' }}>{children}</body>
+            <body className={inter.className} style={{ backgroundColor: '#ACE2E1' }}>{children}</body>
         </html>
     )
 }
