@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
     title: 'YT DOWNLOADER',
-    description: 'Download YouTube videos and musics with this Next.js app.',
+    description: 'Download Video Dan Music Dari YouTube .',
     image: '',
     keywords: 'downtube,youtube downloader,nextjs,react,procet,download youtube,youtube mp3'
 }
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
             <head>
                 <link rel='icon' href='/favicon.ico' />
             </head>
-            <body className={inter.className} style={{ backgroundColor: '#ACE2E1' }}>{children}</body>
+            <body className={inter.className} style={{ backgroundColor: '#124076' }}>{children}</body>
         </html>
     )
 }
