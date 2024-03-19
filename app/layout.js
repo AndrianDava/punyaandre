@@ -5,9 +5,9 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-    title: 'DownTube - Next.js',
+    title: 'YT DOWNLOADER',
     description: 'Download YouTube videos and musics with this Next.js app.',
-    image: 'https://i.imgur.com/2Q7GUig.png',
+    image: '',
     keywords: 'downtube,youtube downloader,nextjs,react,procet,download youtube,youtube mp3'
 }
 
