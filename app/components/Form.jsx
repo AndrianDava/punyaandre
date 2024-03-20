@@ -14,7 +14,7 @@ export default class Form extends Component {
                             disabled={isSearching}
                             action={{
                                 icon: 'search',
-                                color: '#41C9E2',
+                                color: 'gray',
                                 content: 'Search',
                                 labelPosition: 'right',
                                 size: 'small',
