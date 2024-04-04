@@ -9,13 +9,13 @@ export default class Form extends Component {
                 <Grid.Column width={12}>
                     <Image src='/logo.png' size='huge' alt='youtube-logo' centered />
                     <SemanticForm>
-                        <SemanticForm.Input fluid placeholder='Video URL or ID'
+                        <SemanticForm.Input fluid placeholder='Masukan URL Video'
                             autoFocus
                             disabled={isSearching}
                             action={{
-                                icon: 'search',
+                                icon: 'download',
                                 color: 'gray',
-                                content: 'Search',
+                                content: 'Download',
                                 labelPosition: 'right',
                                 size: 'small',
                                 loading: isSearching,
@@ -26,7 +26,7 @@ export default class Form extends Component {
                             iconPosition='left'
                             onChange={(event, { value }) => onChangeInput(value)}
                             error={videoUrlError ? {
-                                content: 'Invalid URL/ID.',
+                                content: 'Kesalahan Di URL/ID.',
                                 pointing: 'below'
                             } : null}
                         />
