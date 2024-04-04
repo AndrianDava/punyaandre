@@ -73,7 +73,7 @@ export default class VideoCard extends Component {
                                 ))}
                             </div>
                             {downloadingPercentage !== null ? <Progress percent={downloadingPercentage} progress color='green' style={{ margin: '1.5em' }} size='medium' success={downloadingPercentage === 100}>
-                                {downloadingPercentage === 100 ? 'Completed' : 'Downloading...'}
+                                {downloadingPercentage === 100 ? 'Completed' : 'Mendownload...'}
                             </Progress> : null}
                         </Card.Description>
                         <Card.Content extra>
@@ -84,13 +84,13 @@ export default class VideoCard extends Component {
                                 <Grid.Column>
                                     <Modal
                                         trigger={
-                                            <Label data-tooltip='Description' as='a' icon={<Icon name='file text' fitted />} basic />
+                                            <Label data-tooltip='Deskripsi' as='a' icon={<Icon name='file text' fitted />} basic />
                                         }
                                         open={this.state.descriptionModal}
                                         onClose={() => this.setState({ descriptionModal: false })}
                                         onOpen={() => this.setState({ descriptionModal: true })}
                                     >
-                                        <Header>Description</Header>
+                                        <Header>Deskripsi</Header>
                                         <Modal.Content style={{ whiteSpace: "pre-line" }}>
                                             {videoInfo.shortDescription}<br /><br />
                                             {videoInfo.keywords && videoInfo.keywords.length ? <Label.Group>
@@ -101,7 +101,7 @@ export default class VideoCard extends Component {
                                         </Modal.Content>
                                         <Modal.Actions>
                                             <Button onClick={() => this.setState({ descriptionModal: false })} icon labelPosition='right'>
-                                                <Icon name='remove' /> Close
+                                                <Icon name='x' /> Keluar
                                             </Button>
                                         </Modal.Actions>
                                     </Modal>
